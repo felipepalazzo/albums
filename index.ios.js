@@ -1,10 +1,14 @@
-import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import React from 'react'
+import { Text, View, AppRegistry } from 'react-native'
+import Header from './src/components/header'
+import AlbumList from './src/components/album-list'
 
 const App = () => {
   return (
-    <Header />
+    <View>
+      <Header />
+      <AlbumList />
+    </View>
   )
 }
 
