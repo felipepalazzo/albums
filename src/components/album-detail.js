@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { Text } from 'react-native'
+import Card from './card'
 
-const AlbumDetail = (props) => (
-  <View>
-    <Text>{props.config.title}</Text>
-  </View>
-)
+const AlbumDetail = (props) => {
+  return (
+    <Card>
+      <Text>{props.config.title}</Text>
+    </Card>
+  )
+}
 
 export default AlbumDetail
